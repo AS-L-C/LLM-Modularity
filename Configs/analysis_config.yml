@@ -1,0 +1,10 @@
+control:
+  dataset_path: ../Data/dataset.pt
+  model_path: ../Models/2024-04-12_18-36-37/training_results.pth
+  activation_path: ../Models/2024-04-12_18-36-37/activations.pth
+  cpd_path: ../Models/2024-04-12_18-36-37/cpd_13d.pth
+  compute_activations: False
+  compute_cpd: False
+cpd:
+  normalize_pats: True
+  disentangle_lang: False   

@@ -1,0 +1,23 @@
+hp_model:
+  n_layers: 2
+  n_heads: 4
+  d_model: 128
+  d_head: 32
+  d_mlp: 512
+hp_training:
+  device: cuda
+  learning_rate: .0001
+  weight_decay: 0.35
+  betas: [0.9, 0.98]
+  n_epochs: 100
+  use_scheduler: True
+log:
+  store_results: True
+  model_path: ../Models
+  save_ckpts: True
+  save_freq: 1
+control:
+  create_dataset: True
+  use_equals: True
+  dataset_path: ../Data/dataset.pt
+  
